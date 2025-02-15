@@ -321,11 +321,21 @@
   font-family: "Supreme-Bold";
   padding: 18px 65px;
   margin: 20px 0 0;
+  &:hover {
+    background: transparent url("../Assets/Images/button-white.svg") no-repeat
+      center;
+    color: #070411;
+  }
   &.ghost {
     background: transparent url("../Assets/Images/button-dark.svg") no-repeat
       center;
     padding: 25px 81px;
     color: #fff;
+    &:hover {
+      background: transparent url("../Assets/Images/button-dark-hover.svg") no-repeat
+        center;
+      color: #070411;
+    }
   }
 }
 
