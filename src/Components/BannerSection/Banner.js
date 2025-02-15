@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import LineGraphic from "../../Assets/Images/banner-line.svg"
 import LineGraphics from "../../Assets/Images/banner-line-mb.svg"
 import Logo from "../../Assets/Images/logo.svg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <section className='banner-section dark-section'>
             <div className='container'>

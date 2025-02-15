@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Mission2 from "../../Assets/Images/mission-2.svg";
 import Mission1 from "../../Assets/Images/mission-1.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Mission = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <section className="mission-section">
       <div className="container">
@@ -49,7 +54,7 @@ const Mission = () => {
           </div>
           <div className="col-lg-6">
             <div className="img-content px-lg-4 text-center">
-              <div className="mx-lg-4 px-md-0 px-4 text-md-start text-center">
+              <div className="mx-lg-4 px-md-0 px-4 text-md-start text-center"  data-aos="fade-left">
                 <img src={Mission1} alt="Image2" />
               </div>
             </div>
@@ -99,7 +104,7 @@ const Mission = () => {
           </div>
           <div className="col-lg-6 order-lg-1 order-2">
             <div className="img-content px-4 text-center">
-              <div className="">
+              <div className=""  data-aos="fade-right">
                 <img src={Mission2} alt="Image2" className="" />
               </div>
             </div>

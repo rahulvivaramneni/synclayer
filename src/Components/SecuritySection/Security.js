@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Graphic from "../../Assets/Images/security-img.svg";
 import Graphic2 from "../../Assets/Images/security-img-2.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Security = () => {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <section className="security-section dark-section">
       <div className="container">
@@ -13,7 +18,7 @@ const Security = () => {
             </div>
           </div>
           <div className="col-lg-7">
-            <div className="para-content">
+            <div className="para-content" data-aos="fade-left">
               <h3 className="heading large">
                 <span>Security</span> for a User Centric <span>Future</span>
               </h3>

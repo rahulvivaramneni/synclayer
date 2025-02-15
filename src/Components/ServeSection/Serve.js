@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Serve = () => {
+    useEffect(() => {
+        AOS.init();
+    })
     return (
         <section className='serve-section'>
             <div className='container'>
@@ -19,7 +24,7 @@ const Serve = () => {
                     <div className='col-lg-12'>
                         <ul className='ps-0 mb-0 listing-items d-flex align-items-lg-end flex-wrap flex-column '>
                             <li className='col-lg-3'>
-                                <div className='content-div para-content position-relative'>
+                                <div className='content-div para-content position-relative' data-aos="fade-left">
                                     <span className='pointer d-flex align-items-center justify-content-center'>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.43934 8.56066C3.87868 9 4.58579 9 6 9C7.41421 9 8.12132 9 8.56066 8.56066C9 8.12132 9 7.41421 9 6C9 4.58579 9 3.87868 8.56066 3.43934C8.12132 3 7.41421 3 6 3C4.58579 3 3.87868 3 3.43934 3.43934C3 3.87868 3 4.58579 3 6C3 7.41421 3 8.12132 3.43934 8.56066Z" stroke="#070411" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -36,7 +41,7 @@ const Serve = () => {
                                 </div>
                             </li>
                             <li className='col-lg-6'>
-                                <div className='content-div para-content position-relative'>
+                                <div className='content-div para-content position-relative' data-aos="fade-left">
                                     <span className='pointer d-flex align-items-center justify-content-center'>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M22 18C21.8011 18.6891 21.4991 19.2323 21.0408 19.682C19.6974 21 17.5354 21 13.2113 21H11.1729C6.84873 21 4.68667 21 3.34333 19.682C2 18.364 2 16.2426 2 12C2 7.75736 2 5.63604 3.34333 4.31802C4.68667 3 6.84873 3 11.1729 3H13.2113C17.5354 3 19.6974 3 21.0408 4.31802C21.4991 4.76771 21.8011 5.31092 22 5.99999" stroke="#070411" stroke-width="1.5" stroke-linecap="round" />
@@ -48,7 +53,7 @@ const Serve = () => {
                                 </div>
                             </li>
                             <li className='col-lg-9'>
-                                <div className='content-div para-content position-relative'>
+                                <div className='content-div para-content position-relative' data-aos="fade-left">
                                     <span className='pointer d-flex align-items-center justify-content-center'>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M18.5 6C18.4191 4.58055 18.197 3.67665 17.5877 3.02513C16.629 2 15.086 2 12 2C8.914 2 7.37099 2 6.4123 3.02513C5.80299 3.67665 5.58093 4.58055 5.5 6M18.5 18C18.4191 19.4194 18.197 20.3233 17.5877 20.9749C16.629 22 15.086 22 12 22C8.914 22 7.37099 22 6.4123 20.9749C5.80299 20.3233 5.58093 19.4194 5.5 18" stroke="#070411" stroke-width="1.5" stroke-linecap="round" />
@@ -62,7 +67,7 @@ const Serve = () => {
                                 </div>
                             </li>
                             <li className='col-12'>
-                                <div className='content-div para-content position-relative'>
+                                <div className='content-div para-content position-relative' data-aos="fade-left">
                                     <span className='pointer d-flex align-items-center justify-content-center'>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M12 13L17 17.5M12 13L7 17.5M12 13V8" stroke="#070411" stroke-width="1.5" />

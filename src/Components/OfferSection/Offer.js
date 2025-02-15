@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Graphic from "../../Assets/Images/graphic-1.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Offer = () => {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <section className="offer-section dark-section">
       <div className="container">
@@ -11,12 +16,12 @@ const Offer = () => {
               <h2 className="heading large">
                 What we <span>offer</span>
               </h2>
-              <img src={Graphic} alt="Graphics" className="mt-4" />
+              <img src={Graphic} alt="Graphics" className="mt-4" data-aos="fade-top" />
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="para-content px-4 position-relative">
-              <div className="inner-content">
+            <div className="para-content px-md-4 position-relative">
+              <div className="inner-content" data-aos="fade-left">
                 <h3>Device Validation Redefined</h3>
                 <p className="mb-3">
                   Sync layer validates every device before it contributes data
@@ -123,7 +128,7 @@ const Offer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="inner-content">
+              <div className="inner-content" data-aos="fade-left">
                 <h3>User Centric Security</h3>
                 <p className="mb-3">
                   Traditional systems rely on central authorities to establish
@@ -133,7 +138,7 @@ const Offer = () => {
                   transparency.
                 </p>
               </div>
-              <div className="inner-content">
+              <div className="inner-content" data-aos="fade-left">
                 <h3>A Scalable Solution for the Future</h3>
                 <p className="mb-3">
                   Whether you're a contributor to a DePIN network or part of a
